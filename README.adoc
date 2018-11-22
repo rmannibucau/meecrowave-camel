@@ -1,0 +1,14 @@
+= Getting started
+
+Compile and run:
+
+[source]
+----
+mvn package meecrowave:run
+----
+
+Then hit:
+
+http://localhost:8080/demo
+
+All the magic hapens in `ProxyDefinition` class which defines the route. `ServletSetup` just registers the camel transport servlet programmatically - can be replaced by a `web.xml`.
